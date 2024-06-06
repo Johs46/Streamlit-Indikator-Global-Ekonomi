@@ -386,7 +386,7 @@ def page_aboutus():
            data = f.read()
         return base64.b64encode(data).decode()
         
-    img = get_img_as_base64("images/bg.jpeg")
+    img = get_img_as_base64("images/aboutus.jpeg")
     
     page_bg_img = f"""
     <style>
@@ -397,7 +397,7 @@ def page_aboutus():
         left: 0;
         width: 100%;
         height: 100%;
-        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuuDpZZAo7gemta_YmRY3d6KObTl-2gwl-u_wq6TXIh59584xIL5U8R0Q&s=10");
+        background-image: url("data:image/png;base64,{img}");
         background-repeat: repeat;
         background-size: cover;
         background-color: #f6f9fb;
