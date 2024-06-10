@@ -65,7 +65,7 @@ def page_blog():
         background-size: cover;
         background-color: #f6f9fb;
         background-position: 80%;
-        filter: blur(6px);
+        filter: blur(10px);
         z-index: -1;
     
     }}
